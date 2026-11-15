@@ -4,8 +4,7 @@ from bs4 import BeautifulSoup
 from openai import OpenAI
 
 # 1. KLISTRA IN DIN NYCKEL HÄR (mellan citattecknen):
-client = OpenAI(api_key="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")
-
+client = OpenAI(api_key=st.secrets["key_GViYBBn3NYWdmr8m"])
 def skrapa_webbsida(url):
     try:
         headers = {'User-Agent': 'Mozilla/5.0'}
